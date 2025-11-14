@@ -1,0 +1,25 @@
+{
+  "name": "beginner-blog",
+  "version": "1.0.0",
+  "description": "Module 3 Node.js tutorial build with Express, routes, views, and static assets.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "tutorial"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

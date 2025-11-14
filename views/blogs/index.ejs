@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<section class="page-heading">
+  <h1>Recent Posts</h1>
+  <p>Posts live in memory for now, but the flow matches the crash course.</p>
+</section>
+
+<section class="blog-list">
+  <% if (!blogs.length) { %>
+  <p>No posts yet.</p>
+  <% } %>
+
+  <% blogs.forEach((blog) => { %>
+  <article class="blog-card">
+    <div>
+      <h2>
+        <a href="/blogs/<%= blog.id %>"><%= blog.title %></a>
+      </h2>
+      <p><%= blog.snippet %></p>
+    </div>
+    <a class="details-link" href="/blogs/<%= blog.id %>">Read</a>
+  </article>
+  <% }) %>
+</section>
+
+<%- include('../partials/footer') %>

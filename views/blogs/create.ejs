@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+<section class="page-heading">
+  <h1>Write a Post</h1>
+  <p>Saving goes into a plain array, which is enough to see the routes work.</p>
+</section>
+
+<form class="form-card" action="/blogs" method="POST">
+  <label for="title">Title</label>
+  <input id="title" name="title" type="text" placeholder="Blog title" required />
+
+  <label for="snippet">Snippet</label>
+  <input id="snippet" name="snippet" type="text" placeholder="Short teaser" required />
+
+  <label for="body">Body</label>
+  <textarea id="body" name="body" rows="6" placeholder="All the thoughts..." required></textarea>
+
+  <button type="submit">Save Post</button>
+</form>
+
+<%- include('../partials/footer') %>

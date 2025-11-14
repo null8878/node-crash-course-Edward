@@ -1,0 +1,32 @@
+<%- include('./partials/header') %>
+
+<section class="page-heading">
+  <h1>About This Project</h1>
+  <p>
+    This is the practice app I built while going through the Node.js Crash Course. It has routing, views,
+    middleware, and a pretend data layer so I could watch the full request cycle.
+  </p>
+</section>
+
+<section class="info-grid">
+  <article>
+    <h2>Stack</h2>
+    <ul>
+      <li>Express for the server</li>
+      <li>EJS for templates</li>
+      <li>Morgan for request logs</li>
+      <li>Plain CSS, no frameworks</li>
+    </ul>
+  </article>
+  <article>
+    <h2>What I Practiced</h2>
+    <ul>
+      <li>Setting up middleware order</li>
+      <li>Using routers for feature areas</li>
+      <li>Rendering dynamic views and partials</li>
+      <li>Handling 404s and redirects</li>
+    </ul>
+  </article>
+</section>
+
+<%- include('./partials/footer') %>

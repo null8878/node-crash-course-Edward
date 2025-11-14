@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Preview</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <span class="logo">Public Preview</span>
+        <nav>
+          <a href="/blogs">Dynamic App</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <main class="content wrap">
+      <section class="page-heading">
+        <h1>Static Entry Point</h1>
+        <p>
+          GitHub Pages only serves static files, so this page exists to describe the Express project. Clone the repo and run the
+          Node server to see the real blog experience on <code>/blogs</code>.
+        </p>
+      </section>
+      <section class="info-grid">
+        <article>
+          <h2>Command Cheatsheet</h2>
+          <ul>
+            <li><code>npm install</code></li>
+            <li><code>npm run dev</code> for nodemon</li>
+            <li><code>npm start</code> for production</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Route Map</h2>
+          <ul>
+            <li><code>GET /blogs</code> list posts</li>
+            <li><code>POST /blogs</code> create new post</li>
+            <li><code>GET /blogs/:id</code> single post</li>
+            <li><code>DELETE /blogs/:id</code> remove a post</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

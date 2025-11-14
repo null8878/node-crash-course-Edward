@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginner Blog Static Preview</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="#">Beginner Blog (Static)</a>
+        <nav>
+          <a href="https://nodejs.org/en" target="_blank" rel="noopener">Node.js</a>
+          <a href="https://expressjs.com/" target="_blank" rel="noopener">Express</a>
+        </nav>
+      </div>
+    </header>
+    <main class="content wrap">
+      <section class="page-heading">
+        <h1>GitHub Pages Friendly Preview</h1>
+        <p>
+          The real project runs on Node.js/Express. This static file exists so GitHub Pages can host a quick preview
+          explaining what the backend does. Clone the repo and run the server to see the dynamic blog.
+        </p>
+      </section>
+      <section class="info-grid">
+        <article>
+          <h2>How to Run Locally</h2>
+          <ol>
+            <li>Install Node.js (v18+)</li>
+            <li>Run <code>npm install</code></li>
+            <li>Run <code>npm run dev</code> for nodemon or <code>npm start</code> for plain node</li>
+          </ol>
+        </article>
+        <article>
+          <h2>What You Get</h2>
+          <ul>
+            <li>Express server with middleware</li>
+            <li>EJS views + partials</li>
+            <li>In-memory blog data and routes</li>
+            <li>Static assets served from <code>public/</code></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
